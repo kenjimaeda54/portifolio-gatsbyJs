@@ -5,6 +5,22 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Merriweather",
+              variants: ["300", "400", "700"],
+            },
+          ],
+        },
+      },
+    },
+  ],
 }

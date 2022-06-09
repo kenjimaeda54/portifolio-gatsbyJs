@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 23px 0px;
+}
+
+.list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.list a {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: var(--color-black);
+}
+
+.list a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--clr-primary-6);
+  color: var(--clr-primary-6);
+}
