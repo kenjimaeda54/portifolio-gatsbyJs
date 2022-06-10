@@ -12,6 +12,6 @@ export const data = [
     id: 2,
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/kenjimaeda1233/",
-    icon: <AiFillLinkedin size={25} />,
+    icon: <AiFillLinkedin size={25} fill="hsl(209,61%,16%)" />,
   },
 ]

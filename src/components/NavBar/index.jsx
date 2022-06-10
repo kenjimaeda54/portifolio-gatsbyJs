@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../../assets/logo.svg"
+import logo from "../../assets/images/logo.svg"
 import { FaAlignCenter } from "react-icons/fa"
 import { data } from "./links"
 import { Link } from "gatsby"

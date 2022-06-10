@@ -3,6 +3,7 @@
   justify-content: space-between;
   width: 100%;
   padding: 23px 0px;
+  z-index: 700;
 }
 
 .list {
