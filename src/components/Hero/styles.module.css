@@ -1,7 +1,9 @@
 .container {
   display: flex;
-  width: 100vw;
   justify-content: space-between;
+  min-height: calc(
+    100vh - 103px
+  ); /* 100vh e importante para que o flex direction do pai empurre para baixo os outros conteudos */
 }
 
 .section {
@@ -16,6 +18,15 @@
   background-color: var(--clr-primary-10);
   width: 60vw;
 }
+
+.icon {
+  fill: var(--clr-grey-1);
+}
+
+a:hover .icon {
+  fill: var(--clr-primary-5);
+}
+
 .wrap {
   display: flex;
   margin-left: 100px;
@@ -24,6 +35,7 @@
   align-items: flex-start;
   gap: 20px;
 }
+
 .title {
   display: flex;
   flex-direction: column;
@@ -82,6 +94,7 @@
 .wrapImg {
   position: absolute;
   right: 20px;
+  height: 400px;
 }
 
 .hero {

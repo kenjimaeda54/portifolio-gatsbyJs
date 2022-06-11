@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-grey-10);
+  padding: 70px 50px;
+  gap: 40px;
+}
+.wrapTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapTitle h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--clr-grey-1);
+  margin-bottom: -3px;
+}
+
+.underlineTitle {
+  width: 5.7rem;
+  height: 0.3rem;
+  background-color: var(--clr-primary-5);
+}
+
+.wrapServices {
+  display: flex;
+  flex-direction: row;
+  flex-direction: space-between;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 25px;
+  background-color: var(--clr-white);
+  min-width: 150px;
+  gap: 20px;
+  border-radius: 4px;
+}
+
+.icon {
+  fill: var(--clr-grey-1);
+}
+
+.card:hover .icon {
+  fill: var(--clr-white);
+}
+
+.card:hover {
+  background-color: var(--clr-primary-5);
+  --color-icon: var(--clr-white);
+}
+
+.card:hover .underlineSubTitle {
+  background-color: var(--clr-white);
+}
+
+.card:hover p {
+  color: var(--clr-white);
+}
+
+.card:hover h3 {
+  color: var(--clr-white);
+}
+
+.wrapSubTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapSubTitle h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--clr-grey-1);
+  margin-bottom: 5px;
+}
+
+.underlineSubTitle {
+  width: 3.7rem;
+  height: 0.1rem;
+  background-color: var(--clr-primary-5);
+}
+
+.card p {
+  text-align: start;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: var(--clr-grey-3);
+}
