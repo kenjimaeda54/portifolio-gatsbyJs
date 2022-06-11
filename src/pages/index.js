@@ -1,5 +1,6 @@
 import React from "react"
 import Hero from "../components/Hero"
+import Jobs from "../components/Jobs"
 import Services from "../components/Services"
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <Services />
+      <Jobs />
     </>
   )
 }

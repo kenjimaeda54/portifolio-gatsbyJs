@@ -1,22 +1,22 @@
 export const data = [
   {
     id: 1,
-    name: "Home",
+    name: "Principal",
     link: "/",
   },
   {
     id: 2,
-    name: "About",
+    name: "Sobre",
     link: "/About",
   },
   {
     id: 3,
-    name: "Projects",
+    name: "Projetos",
     link: "/Projects",
   },
   {
     id: 4,
-    name: "Contact",
+    name: "Contato",
     link: "/Contact",
   },
 ]

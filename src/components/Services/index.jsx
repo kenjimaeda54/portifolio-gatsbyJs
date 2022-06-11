@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <article className={Styles.container}>
       <div className={Styles.wrapTitle}>
-        <h1>Services</h1>
+        <h1>Serviços</h1>
         <div className={Styles.underlineTitle} />
       </div>
       <div className={Styles.wrapServices}>
