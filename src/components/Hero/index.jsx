@@ -30,7 +30,7 @@ export default function Hero() {
       </section>
       <div className={Styles.wrapImg}>
         <StaticImage
-          src={"../../assets/images/hero.svg"}
+          src={"../../assets/images/profile.svg"}
           alt="Hero Image"
           className={Styles.hero}
         />

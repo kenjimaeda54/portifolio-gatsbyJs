@@ -5,7 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: `Portfolio`,
+    description: `Awesome WebDev Portfolio built with Gatsby and Strapi`,
+    titleTemplate: `%s | WebDev Portfolio`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -27,7 +33,7 @@ module.exports = {
       options: {
         apiURL: `http://localhost:1337`,
         queryLimit: 1000,
-        collectionTypes: [`Jobs`],
+        collectionTypes: [`Jobs`, `Projects`],
       },
     },
   ],
