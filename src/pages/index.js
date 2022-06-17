@@ -3,14 +3,20 @@ import { graphql } from "gatsby"
 import Hero from "../components/Hero"
 import Jobs from "../components/Jobs"
 import Services from "../components/Services"
+import Seo from "../components/Seo"
+import Projects from "../components/Projects"
 
 export default function Home({ data }) {
-  console.log(data)
+  const {
+    allStrapiProjects: { nodes },
+  } = data
   return (
     <>
+      <Seo title="Home" />
       <Hero />
       <Services />
       <Jobs />
+      <Projects title="Featured Projects" projects={nodes} />
     </>
   )
 }
@@ -38,7 +44,6 @@ export const query = graphql`
           }
         }
       }
-      totalCount
     }
   }
 `

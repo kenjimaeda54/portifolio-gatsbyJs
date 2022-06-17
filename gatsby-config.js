@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Portfolio`,
     description: `Awesome WebDev Portfolio built with Gatsby and Strapi`,
-    titleTemplate: `%s | WebDev Portfolio`,
+    titleTemplate: `%s |  Portfolio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +22,7 @@ module.exports = {
           google: [
             {
               family: "Merriweather",
-              variants: ["300", "400", "700"],
+              variants: ["300", "400", "500", "700"],
             },
           ],
         },
