@@ -7,12 +7,12 @@ export const data = [
     id: 1,
     name: "Github",
     link: "https://github.com/kenjimaeda54",
-    icon: <AiFillGithub size={25} className={Styles.icon} />,
+    icon: <AiFillGithub size={35} />,
   },
   {
     id: 2,
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/kenjimaeda1233/",
-    icon: <AiFillLinkedin size={25} className={Styles.icon} />,
+    icon: <AiFillLinkedin size={35} />,
   },
 ]

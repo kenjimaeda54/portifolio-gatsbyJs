@@ -21,7 +21,9 @@ export default function Hero() {
             <div className={Styles.dataLink}>
               {data.map(it => (
                 <li key={it.id}>
-                  <a href={it.link}>{it.icon}</a>
+                  <a className={Styles.icon} href={it.link}>
+                    {it.icon}
+                  </a>
                 </li>
               ))}
             </div>

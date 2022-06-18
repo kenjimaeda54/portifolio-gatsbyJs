@@ -1,22 +1,14 @@
-import React from "react"
 import { Link } from "gatsby"
-import Seo from "../components/Seo"
+import React from "react"
+import * as Styles from "./error.module.css"
 
-const Error = () => {
+export default function ErrorTemplate() {
   return (
-    <>
-      <Seo title="Not Found" />
-
-      <main className="error-page">
-        <div className="error-container">
-          <h1>oops it's a dead end</h1>
-          <Link to="/" className="btn">
-            back home
-          </Link>
-        </div>
-      </main>
-    </>
+    <div className={Styles.container}>
+      <h1>Oops isto é um beco sem saída</h1>
+      <Link to="/">
+        <span className={Styles.titleError}> Voltar ao principal</span>
+      </Link>
+    </div>
   )
 }
-
-export default Error

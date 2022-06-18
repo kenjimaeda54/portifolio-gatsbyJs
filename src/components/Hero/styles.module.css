@@ -19,14 +19,6 @@
   width: 60vw;
 }
 
-.icon {
-  fill: var(--clr-grey-1);
-}
-
-a:hover .icon {
-  fill: var(--clr-primary-5);
-}
-
 .wrap {
   display: flex;
   margin-left: 100px;
@@ -105,4 +97,12 @@ a:hover .icon {
   display: flex;
   gap: 7px;
   align-items: center;
+}
+
+.icon {
+  color: var(--clr-grey-1);
+}
+
+.icon:hover {
+  color: var(--clr-primary-5);
 }

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-10);
+  height: 100vh;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  color: var(--clr-primary-1);
+  line-height: 1;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.titleError {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-primary-5);
+  border-radius: 4px;
+  padding: 14px 9px;
+  color: var(--clr-primary-9);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.titleError:hover {
+  background-color: var(--clr-primary-8);
+  color: var(--clr-primary-5);
+}

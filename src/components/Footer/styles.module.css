@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  background-color: var(--clr-grey-1);
+  gap: 20px;
+}
+
+.footer ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  color: var(--clr-white);
+}
+
+.icon:hover {
+  color: var(--clr-primary-5);
+}
+
+.footer span {
+  color: var(--clr-white);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.footer span[tintcolor="true"] {
+  color: var(--clr-primary-5);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
