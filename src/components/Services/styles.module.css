@@ -12,9 +12,19 @@
     min-width: 150px !important;
     gap: 15px !important;
   }
-
   .wrapTitle {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .wrapSubTitle h3 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  .card p {
+    font-size: 0.95rem !important;
+    line-height: 1rem !important;
   }
 }
 
