@@ -1,3 +1,37 @@
+@media screen and (max-width: 1300px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--clr-primary-10);
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: inherit !important; /*vai herdar posição do pai */
+    width: 100vw !important;
+    height: 100%;
+  }
+  .article {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+  }
+  .wrapImg {
+    display: flex;
+    position: inherit !important;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+  }
+}
 .container {
   display: flex;
   justify-content: space-between;

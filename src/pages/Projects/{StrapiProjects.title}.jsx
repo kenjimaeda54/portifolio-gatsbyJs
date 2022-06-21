@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import * as Styles from "./styles.module.css"
+import Seo from "../../components/Seo"
 
 export default function ProjectsTemplate({
   pageContext: { title },
@@ -8,6 +9,7 @@ export default function ProjectsTemplate({
 }) {
   return (
     <div className={Styles.container}>
+      <Seo title={title.replace(/&/gi, " ")} />
       <h1>{title.replace(/&/gi, " ")}</h1>
       <div className={Styles.wrapDescription}>
         <p>{strapiProjects.description}</p>{" "}

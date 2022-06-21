@@ -1,8 +1,8 @@
 import React from "react"
-import logo from "../../assets/images/logo.svg"
-import { FaAlignCenter } from "react-icons/fa"
+import { FaAlignRight } from "react-icons/fa"
 import { data } from "./links"
 import { Link } from "gatsby"
+import logo from "../../assets/images/logo.svg"
 import * as Styles from "./styles.module.css"
 
 export default function NavBar() {
@@ -11,10 +11,15 @@ export default function NavBar() {
       <img src={logo} alt="logo nav bar" />
       <ul className={Styles.list}>
         {data.map(it => (
-          <li key={it.id}>
-            <Link to={it.link}>{it.name}</Link>
+          <li className={Styles.desktop} key={it.id}>
+            <Link activeClassName={Styles.active} to={it.link}>
+              {it.name}
+            </Link>
           </li>
         ))}
+        <button className={Styles.mobile}>
+          <FaAlignRight size={25} className={Styles.iconMobile} />
+        </button>
       </ul>
     </nav>
   )

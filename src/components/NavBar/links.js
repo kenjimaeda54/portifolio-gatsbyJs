@@ -17,6 +17,6 @@ export const data = [
   {
     id: 4,
     name: "Contato",
-    link: "/Contact",
+    link: "/Contato",
   },
 ]

@@ -2,6 +2,7 @@ import React from "react"
 import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql } from "gatsby"
 import * as Styles from "./styles.module.css"
+import Seo from "../../components/Seo"
 
 export default function About({ data }) {
   const {
@@ -11,6 +12,7 @@ export default function About({ data }) {
 
   return (
     <div className={Styles.container}>
+      <Seo title="Sobre" />
       <section className={Styles.sectionImage}>
         <GatsbyImage
           image={pathImage}
