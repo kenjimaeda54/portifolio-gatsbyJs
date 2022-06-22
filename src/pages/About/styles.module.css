@@ -1,3 +1,39 @@
+@media screen and (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 15px !important;
+  }
+  .content {
+    padding: 20px 15px !important;
+  }
+}
+@media screen and (max-width: 520px) {
+  .wrapTitle h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.7rem !important;
+  }
+  .content p {
+    font-size: 0.95rem !important;
+    line-height: 1.2rem !important;
+  }
+  .stackTitle {
+    font-size: 0.73rem !important;
+    line-height: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .content p {
+    font-size: 0.85rem !important;
+    line-height: 1rem !important;
+    letter-spacing: -0.3px;
+  }
+  .stackTitle {
+    font-size: 0.83rem !important;
+    line-height: 1rem !important;
+  }
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -12,7 +48,7 @@
 }
 
 .aboutImage {
-  width: 80%;
+  width: 100%;
 }
 
 .content {

@@ -31,7 +31,6 @@
     line-height: 1.2rem !important;
   }
   .stackTitle {
-    border-radius: 4px;
     font-size: 0.73rem !important;
     line-height: 1rem !important;
   }
@@ -50,8 +49,7 @@
     line-height: 1rem !important;
     letter-spacing: -0.3px;
   }
-  .stack div {
-    border-radius: 4px;
+  .stackTitle {
     font-size: 0.83rem !important;
     line-height: 1rem !important;
   }
