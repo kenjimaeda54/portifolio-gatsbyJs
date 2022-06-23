@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import logo from "../../assets/images/logo.svg"
 import * as Styles from "./styles.module.css"
 
-export default function NavBar() {
+export default function NavBar({ toggleNavBar }) {
   return (
     <nav className={Styles.navigation}>
       <img src={logo} alt="logo nav bar" />
@@ -17,7 +17,7 @@ export default function NavBar() {
             </Link>
           </li>
         ))}
-        <button className={Styles.mobile}>
+        <button className={Styles.mobile} onClick={toggleNavBar}>
           <FaAlignRight size={25} className={Styles.iconMobile} />
         </button>
       </ul>

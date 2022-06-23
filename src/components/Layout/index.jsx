@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import NavBar from "../NavBar"
 import Footer from "../Footer"
 import "../../global/reset.css"
@@ -7,14 +7,17 @@ import * as Styles from "./styles.module.css"
 import SideBar from "../SideBar"
 
 export default function Layout({ children }) {
-  const isOpenNavBar = true
+  const [isOpenNavBar, setIsOpenNavBar] = useState(false)
+
+  const toggleNavBar = () => setIsOpenNavBar(previous => !previous)
+
   return (
     <main className={Styles.container}>
       {isOpenNavBar ? (
-        <SideBar />
+        <SideBar toggleNavBar={toggleNavBar} />
       ) : (
         <>
-          <NavBar />
+          <NavBar toggleNavBar={toggleNavBar} />
           {children}
           <Footer />
         </>

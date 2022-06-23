@@ -5,18 +5,21 @@ import { data as link } from "../NavBar/links"
 import { data as socialLink } from "../Hero/social-link"
 import * as Styles from "./styles.module.css"
 
-export default function SideBar() {
+export default function SideBar({ toggleNavBar }) {
   return (
     <div className={Styles.container}>
-      <section className={Styles.wrapIcon}>
+      <button onClick={toggleNavBar} className={Styles.wrapIcon}>
         <FaTimes size={30} className={Styles.icon} />
-      </section>
+      </button>
       <section className={Styles.wrapContent}>
-        <nav className={Styles.navBar}>
+        <nav>
           <ul>
             <li>
+              {/*se nao colocar esse onClick vai mudar de pagina mas continuar o navBar aberto*/}
               {link.map(it => (
-                <Link to={it.link}>{it.name}</Link>
+                <Link onClick={toggleNavBar} to={it.link}>
+                  {it.name}
+                </Link>
               ))}
             </li>
           </ul>
