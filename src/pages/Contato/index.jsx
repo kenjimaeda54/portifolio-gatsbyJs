@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Seo from "../../components/Seo"
 import * as Styles from "./styles.module.css"
 
 export default function Contact() {
@@ -10,6 +11,7 @@ export default function Contact() {
 
   return (
     <div className={Styles.container}>
+      <Seo title="Contato" />
       <article>
         <h2>Entrar em contato</h2>
         <form
