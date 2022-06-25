@@ -31,7 +31,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://portfolio-kvm.herokuapp.com`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 1000,
         collectionTypes: [`Jobs`, `Projects`],
         singleTypes: [`About`],
